@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+
+    <style>
+        .imgInText {
+            width: 300px;
+            height: 140px;
+        }
+
+        .azul{
+            background: gray;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Cabeçalho
+    </h1>
+    <p>
+        <!-- <b> = <strong> / <i> = <em> muda a enfase da frase no leitor de tela por exemplo, muda a semantica-->
+        <b>Lorem</b> <strong>ipsum</strong>, <i>dolor</i> <em>sit</em> amet consectetur adipisicing elit. Assumenda
+        sequi, deleniti repudiandae nam
+        atque voluptatum impedit quidem aperiam expedita ipsam ad dolore culpa numquam autem voluptates, ea harum illo
+        <a href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/24624900#learning-tools"
+            target="_blank">dolorum.</a>
+
+        <a href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/24624900#learning-tools"
+            target="_blank">
+            <img class="imgInText"
+                src="https://imgs.search.brave.com/maho4fZvaPFTWcPsaaIZhM4tlIyRh1_0VDXJVT34VPs/rs:fit:905:225:1/g:ce/aHR0cHM6Ly90c2U0/LmV4cGxpY2l0LmJp/bmcubmV0L3RoP2lk/PU9JUC5xa2RIY2dD/RkJlMUY3Mm9EZXIx/MjJBSGFENCZwaWQ9/QXBp"
+                alt=" Imagem escrito sextou, demonstrando a alegria do final de semana">
+        </a>
+    </p>
+    <hr>
+    <!--    
+            <del> mostra q esta errado <s> apenas risca o meio da palavra
+            <ins> inserção <u> underline, sublinha
+            questoes semanticas /\
+        -->
+    <p>
+        <del>Lorem ipsum</del>, <ins>dolor sit amet consectetur adipisicing elit.</ins> <s>Assumenda sequi</s>, <u> deleniti repudiandae</u> <small> nam atque voluptatum impedit</small> 2^2 -- 2<sup>2</sup> H20 -- H<sub>2</sub>O 
+        <br>
+        <br>
+        <hr>
+        quidem aperiam <span style="font-size: 24px; color: rebeccapurple;">console.log("Olá Mundo!")</span>  expedita ipsam ad olore culpa numquam autem voluptates, ea harum illo dolorum.
+    <q cite="google.com.br">duduzinho citações ue achei dsdjsi sodjs</q>
+<!-- nao pode ser dentro do paragrafo, mas pode ter um paragrafo dentro dele-->
+    <blockquote cite="google.com.br">
+        Aqui sim eu estou fazendo um bloco de citação
+        <p> paragrafo dentro</p>
+        <hr>
+    </blockquote>
+
+    <pre> <!-- essa tag coloca textos pre formatados, mostra exatamente do jeito q esta escrito-->
+        <code>
+            #include stdio.h
+            string nome;
+
+            printf("Diga seu nome: ");
+            scanf("%s", &nome);
+        </code>
+    </pre>
+    <!-- <span> display inline <div> quebra o bloco-->
+    <div class="azul">Eu sou um bloco</div>
+</body>
+</html>
